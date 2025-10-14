@@ -1,0 +1,509 @@
+/* -----------------CSS BY CHRISTINA CARRASQUILLA -----------------*/
+
+/* -----------------IMPORTED FONTS -----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* -----------------CSS REST -----------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -----------------ROOT VARIABLES -----------------*/
+:root {
+    --ocean-blue: #0077B6; 
+    --turquoise-blue: #00BFD8; 
+    --sandy-beige:#F4E1C1; 
+    --sunset-orange:#F76C5E; 
+    --deep-navy:#1B263B; 
+    --soft-white:#FAFAFA;
+    --form-control-color: #F76C5E;
+    font-family: "Poppins", serif;
+    color: var(--deep-navy);
+}
+
+/* ----------------- GLOBAL STYLES (MOBILE FIRST) -----------------*/
+* {
+    box-sizing: border-box;
+}
+html {
+    background-image: linear-gradient(to right, #00bfd8, #63ccbf, #9fd5ae, #d0dbaf, #f4e1c1);
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+header, nav, article, footer {
+    padding: 1rem;
+}
+picture, #plan-your-trip, #about-your-destination  {
+    margin-top:1rem;
+}
+header {
+    grid-row:2/3;
+    background-color: var(--turquoise-blue);
+    border-top: 3px solid var(--soft-white);
+    border-bottom: 3px solid var(--soft-white);
+}
+picture {
+    display: grid;
+    place-content: center;
+}
+nav {
+    grid-row: 1/2;
+    text-align:center;
+}
+nav {
+    width: 100%;
+    margin-top: 8rem;
+    border: 0;
+    padding: 1rem;
+}
+a#home {
+    font-size: 3em;
+    text-decoration: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    text-transform: none;
+    font-weight: normal;
+    min-width: 360px;
+}
+nav svg {
+    fill: var(--sunset-orange);
+    stroke:var(--deep-navy);
+    stroke-width: 4px;
+    width: 20%;
+    position: relative;
+    top:3rem;
+}
+nav a svg:hover {
+    stroke: var(--soft-white);
+}
+nav ul {
+    text-align:center;
+    margin:0;
+    padding:0;
+    list-style:none;
+    overflow:hidden;
+    max-height:0;
+    transition: max-height .2s ease-out;
+}
+nav h2, #intro h3 {
+    visibility:hidden;
+    height:1px;
+    width: 1px;
+}
+nav li a {
+    display:block;
+    padding:1rem;
+    text-decoration:none;
+    color:var(--deep-navy);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav a:hover, nav input:hover {
+    background-color:var(--deep-navy);
+    color: var(--soft-white);
+}
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    user-select: none;
+}
+nav label span {
+    background-color: var(--deep-navy);
+    display: block;
+    height: 5px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 30px;
+}
+nav label span:before, nav label span:after {
+    background: var(--deep-navy);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+nav label span:before {
+    top: 10px;
+}
+nav label span:after {
+    top: -10px;
+}
+[type=checkbox] {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+#plan-your-trip, #about-your-destination {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#plan-your-trip h3, #about-your-destination h3 {
+    grid-column: 1/-1;
+}
+#plan-your-trip section, #about-your-destination section {
+    background-color: var(--turquoise-blue);
+    color: var(--deep-navy);
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+    margin-bottom: 1rem;
+    border:3px solid var(--soft-white);
+    border-radius: 1rem;
+    padding-top: 1rem;
+}
+#about-your-destination section {
+    padding: .5rem;
+}
+.plan a {
+    background-color: var(--sunset-orange);
+    color: var(--deep-navy);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+}
+.plan a:hover {
+    background-color:var(--deep-navy);
+    color: var(--sunset-orange);
+}
+[src] {
+    border-radius: 1rem;
+    border: 3px solid var(--soft-white);
+}
+#testimonials section {
+    display: grid;
+    place-items: center;
+}
+#testimonials img {
+    border-radius: 50%;
+}
+#testimonials div {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+dd, dt {
+    display: inline-block;
+    margin: .5rem 0;
+}
+dt {
+    font-weight: bold;
+}
+q {
+    font-style: italic;
+    margin: .5rem 0;
+}
+label, input, legend, select {
+    display: block;
+    width: 95%;
+    padding: .5rem;
+}
+.sr-only {
+    background: var(--sunset-orange);
+    height: 1rem;
+    padding: 1.5rem;
+    position: absolute;
+    transform: translateX(-250%);
+    transition: transform 0.3s;
+}
+.sr-only:focus {
+    transform: translateX(0%);
+}
+footer {
+    background-color: var(--deep-navy);
+    color: var(--soft-white);
+}
+#preferred-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#preferred-contact legend {
+    grid-column: 1/-1;
+    margin: .5rem 0;
+}
+fieldset div {
+    display: flex;
+}
+fieldset div label {
+    line-height: 0;
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    color: var(--sunset-orange);
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid var(--sunset-orange);
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+.form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+.form-control + .form-control {
+    margin-top: 1em;
+}
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+#submit {
+    background-color: var(--sunset-orange);
+    margin: 1rem 0;
+    padding: .5rem;
+    font-weight: bold;
+    font-family: Poppins, serif;
+    font-size: 1.5em;
+    color: var(--deep-navy);
+    text-transform: uppercase;
+}
+#submit:hover {
+    background-color: var(--deep-navy);
+    color: var(--sunset-orange);
+}
+/* TEXT STYES */
+h1, h2, h3, #home {
+    font-family: "Pacifico", serif;
+    text-align: center;
+    padding: 1rem;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.75em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+p {
+    line-height: 1.5em;
+}
+a:visited {
+    color: var(--deep-navy);
+}
+#required {
+    font-family: Poppins, serif;
+    font-size: .5em;
+    font-style: italic;
+    color: var(--sunset-orange);
+}
+span {
+    font-size: 1.75em;
+    color: var(--sunset-orange);
+}
+header h1+p {
+    font-size: 1.15em;
+    font-weight: bold;
+    font-style: italic;
+}
+#legal h2 {
+    visibility: hidden;
+}
+#legal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+small {
+    display: block;
+    text-align: center;
+    font-size: .75em;
+    font-style: italic;
+    padding: 1rem;
+    grid-column: 1/3;
+}
+#legal a {
+    color: var(--soft-white);
+    font-size: .75em;
+}
+/* ----------------- GLOBAL STYLES (MEDIUM) -----------------*/
+@media screen and (min-width: 920px){
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    header h1 + p {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    header p + p {
+        column-count: 2;
+        padding: 1rem 0;
+    }
+    a#home {
+        position:static;
+        padding-top: 0;
+        width: 100px;
+        font-size: 2.5em;
+    }
+    nav ul {
+        overflow:visible;
+        position:absolute;
+        top:2rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav label span, nav input {
+        display:none;
+    }
+    picture {
+        display:block;
+        place-content:unset;
+    }
+    article small {
+        text-align: right;
+    }
+    #intro h3, #testimonials h3 {
+        grid-column: 1/-1;
+    }
+    #intro {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    #intro p {
+        font-size: 1.4em;
+        line-height: 1.7em;
+        font-style: italic;
+    }
+    #plan-your-trip {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #testimonials {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #about-your-destination {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #preferred-contact {
+        grid-column: 1/-1;
+    }
+    #submit {
+        grid-column: 2/3;
+    }
+}
+/* ----------------- GLOBAL STYLES (LARGE) -----------------*/
+@media screen and (min-width:1280px) {
+    body {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    #intro {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #intro img, #intro small {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    #testimonials {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #preferred-contact {
+        grid-column: 1/2;
+    }
+    #destination, #travelTime {
+        grid-row: 4/5;
+    }
+    #submit {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+}
