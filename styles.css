@@ -88,6 +88,27 @@ header {
     border-top: 3px solid var(--soft-white);
     border-bottom: 3px solid var(--soft-white);
 }
+
+/* Skip line Styling */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background: #C5FFFD;
+  color: #374B4A;
+  font-weight: 400;
+  padding: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.skip-link:focus {
+  transform: translate(-50%, 0%);
+  outline: 2px solid #374B4A;
+}
+
 picture {
     display: grid;
     place-content: center;

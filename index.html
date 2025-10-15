@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Wonderlust Travel- Destination Majorca</title>
 </head>
 <body>
 
-    <header>
-        Destination Majorca
-        Let Wonderlust Travel help you plan the trip of your dreams!
-        Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.
-    </header>
-    <nav>
-        Main Navigation
+     <nav>
+        <h2>Main Navigation</h2>
         <input type="checkbox" id="dropdown">
         <label for="dropdown"><span></span></label>
         <ul>
             <li><a href="#" id="home">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M5.5 51.9C3.3 38.4 7.6 24.6 17 14.7 26.6 4.9 40.2 0 53.8 1.8c13.6 1.7 25.6 9.7 32.3 21.6-2.1.8-3.9 2-5.5 3.5l-5.4 5.4-15.8-3.4c-2.4-.5-5-.4-7.4.3-2 .6-3.9 1.6-5.4 3l-3.7 3.2c-2.4 2.1-3.6 5.1-3.5 8.2.2 3.1 1.8 6 4.3 7.8-.8.5-1.6 1-2.3 1.7l-1.7 1.5c-3.5 3.1-4.5 8.2-2.4 12.4L22.1 79.4C13.2 72.7 7.3 62.8 5.5 51.9Zm8.3 45.2c.8.3 1.6.6 2.4.8h.3c.3.2.6.2.9.3h.4c.3.1.6.2.9.2 1.7.2 3.4.2 5.1 0h.9v-.1c3.1-.5 6.1-1.7 8.7-3.6L51.6 81l-2.1-5.4-5.4-3-16.9 13.8c-1.4 1.1-3 1.7-4.7 2-.9.1-1.8.2-2.7 0h-1l-.3-.1c-.4 0-.9-.2-1.3-.4-3.4-1.2-6-4.1-6.8-7.6-2.9-3.1-5.4-6.6-7.5-10.4-.3.7-.6 1.5-.9 2.3-2.1 6.5-.8 13.7 3.6 18.9 2.2 2.6 5 4.7 8.2 5.9Zm83.4-63.7C95.9 31.9 94 31 92 30.9c-2 0-3.9.7-5.4 2.1l-8.8 8.6-20.3-4.4c-1.9-.4-3.8.1-5.3 1.4l-3.7 3.2c-.4.4-.6.9-.6 1.4 0 .5.4 1 .8 1.3L65.1 54l-5.6 5.5-7.8-1.3c-1.7-.3-3.5.2-4.8 1.4l-1.7 1.5c-.4.4-.6.9-.6 1.4 0 .5.4 1 .9 1.3l10.6 5.7 4.3 11.3c.2.5.6.9 1.1 1 .5.1 1.1 0 1.5-.4l1.7-1.5c1.3-1.1 2-2.8 1.9-4.6l-.4-8 6.1-4.8L79.6 80c.3.8 1.2 1.2 2 .9.2 0 .4-.2.6-.3l3.7-3.2c1.4-1.3 2.2-3.2 2-5.1l-1.8-20.7 9.7-7.6c1.6-1.2 2.6-3.1 2.8-5.1.2-2-.5-4-1.8-5.5Z"/></svg>
-                Wonderlust Travel</a></li>
+               Wonderlust Travel</a></li>
             <li><a href="#">Destinations</a></li>
             <li><a href="#">Inspirations</a></li>
             <li><a href="#">Special</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    
+    <header>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#plan-your-trip" class="skip-link">Skip to plan your trip</a>
+    <a href="#testimonials" class="skip-link">Skip to testimonials</a>
+    <a href="#about-your-destination" class="skip-link">Skip to about your destination</a>
+    <a href="#contact-us" class="skip-link">Skip to contact us</a>
+  
+        
+        <h1>Destination Majorca</h1>
+       <p>Let Wonderlust Travel help you plan the trip of your dreams! 
+       Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.</p>
+    </header>
+   
+    <main id="main">
         <article>
-            Majorca
+            <h2>Majorca</h2>
             <section id="intro">
 
-                Introduction
-                Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.
+                <h3>Introduction</h3>
+                <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
                 <div>
                 <!--Responsive Image for Art Direction
                     images/majorca-beach-square-s.jpg
@@ -42,14 +52,21 @@
 
                     404px, 920px, 1280px
                     -->
+                    <picture>
+                        <source media="(min-width: 1280px)" srcset="images/majorca-beach-horizontal-l.jpg"/>
+                        <source media="(max-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg"/>
+                        <source media="(max-width: 404px)" srcset="images/majorca-beach-horizontal-l.jpg"/>
+                        <img src="images/majorca-beach-horizontal-l.jpg" alt=""/>
+                    </picture>
+
                     <small>Photo by <a href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie Firth</a> on <a href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
                 </div>
             </section>
             <section id="plan-your-trip">
-                Plan Your Trip
+                <h3>Plan Your Trip</h3>
 
                 <section class="plan">
-                    How to Get There
+                    <h4>How to Get There</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
@@ -57,7 +74,7 @@
                     <a href="#" title="Search for flights">Search Flights</a>
                 </section>
                 <section class="plan">
-                    Places to Stay
+                    <h4>Places to Stay</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6" />
@@ -66,7 +83,7 @@
                     <a href="#" title="Search for Hotels">Search Hotels</a>
                 </section>
                 <section class="plan">
-                    Things to do
+                    <h4>Things to do</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sailboat" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1" />
@@ -77,7 +94,7 @@
                     <a href="#" title="Search for Activities">Search Activity</a>
                 </section>
                 <section class="plan">
-                    Where to Eat
+                    <h4>Where to Eat</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools-kitchen-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3" />
@@ -86,7 +103,7 @@
                 </section>
             </section>
             <section id="testimonials">
-                Testimonials
+                <h3>Testimonials</h3>
 
                 <section>
                     <!--Responsive Image for resolution switching
@@ -95,13 +112,18 @@
                         images/miranda-blake-M.png 920w
                         images/miranda-blake-L.png 1280w
                     -->
+                        <img
+                        src="images/miranda-blake-L.png"
+                        srcset="images/miranda-blake-S.png 404w, images/miranda-blake-M.png 920w, images/miranda-blake-L.png 1280w"
+                        sizes="140vmin"
+                        alt="Image of Miranda Blake">
                         <div>
-                        Miranda Blake
+                        <h4>Miranda Blake</h4>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>London, England</dd>
                         </dl>
-                        "I traveled here for business, but my stay was extended. Now it is my home."
+                       <p>"I traveled here for business, but my stay was extended. Now it is my home."</p>
                     </div>
                 </section>
                 <section>
@@ -111,13 +133,18 @@
                         images/max-winter-M.png 920w
                         images/max-winter-L.png 1280w
                     -->
+                        <img
+                        src="images/max-winter-L.png"
+                        srcset="images/max-winter-S.png 404w, images/max-winter-M.png 920w, images/max-winter-L.png 1280w"
+                        sizes="140vmin"
+                        alt="Image of Max Winter">
                         <div>
-                        Max Winter
+                        <h4>Max Winter</h4>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Berlin, Germany</dd>
                         </dl>
-                        "Great escape from my reality. Beautiful sunsets, wonderful people, great beer."
+                        <p>"Great escape from my reality. Beautiful sunsets, wonderful people, great beer."</p>
                     </div>
                 </section>
                 <section>
@@ -127,13 +154,18 @@
                         images/ines-villegoes-M.png 920w
                         images/ines-villegoes-L.png 1280w 
                     -->
+                        <img
+                        src="images/ines-villegoes-L.png"
+                        srcset="images/ines-villegoes-S.png 404w, images/ines-villegoes-M.png 920w, images/ines-villegoes-L.png 1280w"
+                         sizes="140vmin"
+                        alt="Image of Inés Villegoes">
                     <div>
-                        Inés Villegoes
+                        <h4>Inés Villegoes</h4>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Barcelona, Spain</dd>
                         </dl>
-                        "A very safe environment for all travelers."
+                        <p>"A very safe environment for all travelers."</p>
                     </div>
                 </section>
                 <section>
@@ -143,21 +175,27 @@
                         images/carmen-lorenzo-M.png 920w
                         images/carmen-lorenzo-L.png 1280w
                     -->
+                        <img
+                        src="images/carmen-lorenzo-L.png"
+                        srcset="images/carmen-lorenzo-S.png 404w, images/carmen-lorenzo-M.png 920w, images/carmen-lorenzo-L.png 1280w"
+                        sizes="140vmin"
+                        alt="Image of Carmen Lorenzo">
+
                         <div>
-                        Carmen Lorenzo
+                        <h4>Carmen Lorenzo</h4>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Madrid, Spain</dd>
                         </dl>
-                        "Live, laugh, love-- everything you need in Majorca."
+                        <p>"Live, laugh, love-- everything you need in Majorca."</p>
                     </div>
                 </section>
             </section>
             <section id="about-your-destination">
-                About Your Destination
+                <h3>About Your Destination</h3>
 
                 <section>
-                    Size
+                    <h4>Size</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M17 3l4 4l-14 14l-4 -4z" />
@@ -172,7 +210,7 @@
                     </dl>
                 </section>
                 <section>
-                    Elevation
+                    <h4>Elevation</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-bar" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="12" y1="21" x2="12" y2="3" />
@@ -185,7 +223,7 @@
                     </dl>
                 </section>
                 <section>
-                    Location
+                    <h4>Location</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="12" cy="11" r="3" />
@@ -197,7 +235,7 @@
                     </dl>
                 </section>
                 <section>
-                    Population
+                    <h4>Population</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="9" cy="7" r="4" />
@@ -213,43 +251,52 @@
             </section>
         </article>
     </main>
+
     <footer>
+        
         <section id="contact-us">
-            Contact Us <span id="required">(*required)</span>
-            
+            <h3>Contact Us</h3> <span id="required">(*required)</span>
+
+            <form> 
+
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="my-firstname">First Name<span aria-hidden="true">*</span></label>
+                    <input type="text" id="my-firstname" name="my-firstname" required aria-required="true">
                 </div>
+
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="my-lastname">Last Name<span aria-hidden="true">*</span></label>
+                    <input type="text" id="my-lastname" name="my-lastname" required aria-required="true">
                 </div>
+
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="my-email">Email<span aria-hidden="true">*</span></label>
+                    <input type="email" id="my-email" name="my-email" required aria-required="true">
                 </div>
+                
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="my-phone">Phone<span aria-hidden="true">*</span></label>
+                    <input type="tel" name="my-phone" id="my-phone" required aria-required="true">
                 </div>
+
                 <fieldset id="preferred-contact">
-                <legend>Preferred Contact Method<span>*</span></legend>
+                <legend>Preferred Contact Method<span aria-hidden="true">*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input type="radio" name="pref-contact" id="pref-email" value="email" checked>
+                        <label for="pref-email">Email<span aria-hidden="true">*</span></label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input type="radio" name="pref-contact" id="pref-text" value="messages">
+                        <label for="pref-text">Text<span aria-hidden="true">*</span></label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="radio" name="pref-contact" id="pref-phone" value="phone">
+                        <label for="pref-phone">Phone<span aria-hidden="true">*</span></label>
                     </div>
                 </fieldset>
+
                 <fieldset id="destination">
-                    <legend>Destination<span>*</span></legend>
+                    <legend>Destination<span aria-hidden="true">*</span></legend>
                     <select id="select-destination">
                         <option>Choose</option>
                         <option>Barcelona</option>
@@ -263,8 +310,9 @@
                         <option>Other</option>
                     </select>
                 </fieldset>
+
                 <fieldset id="travelTime">
-                    <legend>Travel Time<span>*</span></legend>
+                    <legend>Travel Time<span aria-hidden="true">*</span></legend>
                     <select id="select-travel-time">
                         <option>Choose</option>
                         <option>Fall</option>
@@ -274,11 +322,13 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
+                <button type="submit" id="submit">Submit</button>
+                </form>
             
         </section>
+                
         <section id="legal">
-            Legal
+            <h3>Legal</h3>
             <small>Copyright 2021 Wonderlust</small>
             <a href="#">Privacy Statement</a>
             <a href="#">Terms of Service</a>
